@@ -13,7 +13,6 @@
 int rotateBy180(const int input){
 	int binput = input;
 	
-	
 	int nDigit = 0;
 	unsigned int i = 0;
 	nDigit = floor(log10(abs(binput))) + 1;
@@ -34,22 +33,26 @@ int rotateBy180(const int input){
 			arrayq[i] = oneDig;
 		}
 		binput /= 10;
-	} while (binput != 0);
-	for (i=0; i<nDigit; ++i) {
-		if(arrayp[i] != arrayq[i]){
+		++i;
+
+	} while (binput > 0);
+	for (i=0; i<nDigit-1; ++i) {
+		if(arrayp[i] != arrayq[nDigit-1-i]){
+			printf("%d--%d",arrayp[i],arrayq[i]);
 			return 0;
 		}
 	}
+
 	return 1;
 }
 int main(){
 		//180 degree rotations of 6, 9, 1, 0 and 8 are 9, 6, 1, 0 and 8 respectively
 	
-	int input = 69;
-		//printf("program started with %d\n", rand());
+	int input = 996;
+	printf("program started with %d\n", rand());
 	int revA = rotateBy180(input);
 	char * str= (revA == 1)?" Fancy." : " Not Fancy.";
-	printf("Given number is %s", str);
-		//printf("\n\nprogram ended with %d\n", rand());
+	printf("Given number is%s", str);
+	printf("\n\nprogram ended with %d\n", rand());
 	
 }
