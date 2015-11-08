@@ -12,8 +12,7 @@
 
 int rotateBy180(const int input){
 	int binput = input;
-	int actA = {6,9,1,0,8};
-	int mapA = {9,6,1,0,8};
+	
 	
 	int nDigit = 0;
 	unsigned int i = 0;
@@ -47,10 +46,10 @@ int main(){
 		//180 degree rotations of 6, 9, 1, 0 and 8 are 9, 6, 1, 0 and 8 respectively
 	
 	int input = 69;
-	printf("program started with %d\n", rand());
+		//printf("program started with %d\n", rand());
 	int revA = rotateBy180(input);
 	char * str= (revA == 1)?" Fancy." : " Not Fancy.";
 	printf("Given number is %s", str);
-	printf("\n\nprogram ended with %d\n", rand());
+		//printf("\n\nprogram ended with %d\n", rand());
 	
 }
