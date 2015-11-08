@@ -9,7 +9,7 @@
 	//if all the digits are reversible, then replace all 6 with 9 and check if the number is same as input one, if yes then only ythe number is fancy, else not fancy.
 #include <stdio.h>
 #include <math.h>
-//using namespace std;
+
 int rotateBy180(const int input){
 	int binput = input;
 	int actA = {6,9,1,0,8};
