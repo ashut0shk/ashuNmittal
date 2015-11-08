@@ -7,8 +7,7 @@
 	//
 	//Condition 1 If the number have any other digits tahn the given reversible the it cannot be fancy
 	//if all the digits are reversible, then replace all 6 with 9 and check if the number is same as input one, if yes then only ythe number is fancy, else not fancy.
-#include <stdio.h>
-#include <math.h>
+#include "main.c"
 
 int rotateBy180(const int input){
 	int binput = input;

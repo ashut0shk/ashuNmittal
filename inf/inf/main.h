@@ -10,5 +10,10 @@
 #define main_h
 
 #include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <strings.h>
+
 
 #endif /* main_h */
