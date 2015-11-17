@@ -12,7 +12,7 @@
 Foo * FooCreate(int age, int something) {
 	Foo * newFoo = malloc(sizeof(Foo));
 
-	FooInitialize(newFoo);
+	FooInitialize(newFoo, 12, 22);
 
 	return newFoo;
 }
